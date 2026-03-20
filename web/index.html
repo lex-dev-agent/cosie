@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cosie · Your baby's companion</title>
-  <meta name="description" content="Cosie is a teddy bear that keeps an eye on your little one's comfort, wherever they go.">
+  <meta name="description" content="Cosie is a cellular-connected teddy bear that monitors your baby's sleep environment temperature. No Wi-Fi needed. Alerts on your phone, wherever you are.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
     <div class="container hero-inner">
       <div class="hero-content">
         <h1>Meet Cosie.</h1>
-        <p class="hero-sub">Cosie is a teddy bear that quietly keeps an eye on your little one's comfort. At home, at grandma's, or on the go.</p>
+        <p class="hero-sub">Cosie is a teddy bear that monitors the temperature around your baby and alerts you if it gets too warm or too cold. No Wi-Fi or Bluetooth setup. It just works, wherever you are.</p>
         <form class="signup-form" id="hero-form">
           <input type="email" placeholder="Your email address" required aria-label="Email address">
           <button type="submit" class="btn">Join the waitlist</button>
@@ -44,66 +44,7 @@
       </div>
       <div class="hero-visual">
         <div class="teddy-illustration">
-          <svg viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg" class="teddy-svg">
-            <defs>
-              <radialGradient id="bodyGrad" cx="50%" cy="40%" r="55%">
-                <stop offset="0%" stop-color="#E0B88A"/>
-                <stop offset="100%" stop-color="#C49564"/>
-              </radialGradient>
-              <radialGradient id="bellyGrad" cx="50%" cy="35%" r="60%">
-                <stop offset="0%" stop-color="#F2DCBC"/>
-                <stop offset="100%" stop-color="#E4C89E"/>
-              </radialGradient>
-              <radialGradient id="earInner" cx="45%" cy="40%" r="55%">
-                <stop offset="0%" stop-color="#F0D5B5"/>
-                <stop offset="100%" stop-color="#DEB88A"/>
-              </radialGradient>
-              <filter id="softShadow" x="-10%" y="-5%" width="120%" height="120%">
-                <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
-                <feOffset dy="6"/>
-                <feComposite in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1"/>
-                <feFlood flood-color="#8B6E4E" flood-opacity="0.12"/>
-                <feComposite in2="SourceGraphic" operator="in"/>
-                <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-              <filter id="glow">
-                <feGaussianBlur stdDeviation="3" result="blur"/>
-                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-              </filter>
-            </defs>
-            <g filter="url(#softShadow)">
-              <ellipse cx="92" cy="78" rx="42" ry="44" fill="url(#bodyGrad)"/>
-              <ellipse cx="92" cy="76" rx="26" ry="28" fill="url(#earInner)"/>
-              <ellipse cx="208" cy="78" rx="42" ry="44" fill="url(#bodyGrad)"/>
-              <ellipse cx="208" cy="76" rx="26" ry="28" fill="url(#earInner)"/>
-              <ellipse cx="150" cy="255" rx="78" ry="70" fill="url(#bodyGrad)"/>
-              <ellipse cx="150" cy="250" rx="48" ry="44" fill="url(#bellyGrad)"/>
-              <path d="M82 210 Q55 235 65 270 Q72 285 85 275 Q95 260 88 230Z" fill="url(#bodyGrad)"/>
-              <path d="M218 210 Q245 235 235 270 Q228 285 215 275 Q205 260 212 230Z" fill="url(#bodyGrad)"/>
-              <ellipse cx="112" cy="315" rx="28" ry="16" fill="url(#bodyGrad)"/>
-              <ellipse cx="112" cy="314" rx="18" ry="11" fill="url(#bellyGrad)"/>
-              <ellipse cx="188" cy="315" rx="28" ry="16" fill="url(#bodyGrad)"/>
-              <ellipse cx="188" cy="314" rx="18" ry="11" fill="url(#bellyGrad)"/>
-              <circle cx="150" cy="135" r="82" fill="url(#bodyGrad)"/>
-              <ellipse cx="150" cy="150" rx="36" ry="28" fill="url(#bellyGrad)"/>
-              <ellipse cx="122" cy="122" rx="9" ry="10" fill="#3D2B1A"/>
-              <ellipse cx="178" cy="122" rx="9" ry="10" fill="#3D2B1A"/>
-              <circle cx="126" cy="118" r="3.5" fill="white" opacity="0.75"/>
-              <circle cx="182" cy="118" r="3.5" fill="white" opacity="0.75"/>
-              <path d="M110 108 Q122 102 134 108" stroke="#B8956A" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
-              <path d="M166 108 Q178 102 190 108" stroke="#B8956A" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
-              <ellipse cx="150" cy="143" rx="13" ry="10" fill="#3D2B1A"/>
-              <ellipse cx="149" cy="141" rx="6" ry="3.5" fill="#6B5040" opacity="0.45"/>
-              <path d="M138 153 Q144 162 150 155 Q156 162 162 153" stroke="#3D2B1A" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <circle cx="108" cy="142" r="10" fill="#E8A88A" opacity="0.25"/>
-              <circle cx="192" cy="142" r="10" fill="#E8A88A" opacity="0.25"/>
-              <path d="M150 222 L150 278" stroke="#C9A876" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.35"/>
-            </g>
-            <g filter="url(#glow)">
-              <circle cx="150" cy="222" r="5" fill="#6AB06D" class="pulse-dot"/>
-              <circle cx="150" cy="222" r="5" fill="#6AB06D" class="pulse-ring"/>
-            </g>
-          </svg>
+          <img src="teddy-hero.png" alt="Cosie teddy bear" class="teddy-img">
         </div>
       </div>
     </div>
@@ -121,7 +62,7 @@
         </div>
         <div class="feature-card">
           <h3>12 months, zero maintenance</h3>
-          <p>One charge lasts 12 months. No cables, no charging, no fuss. Just put it in and forget about it.</p>
+          <p>One charge lasts 12 months. No cables, no charging, no fuss. One less thing to worry about.</p>
         </div>
         <div class="feature-card">
           <h3>Alerts on your phone</h3>
@@ -140,7 +81,7 @@
     <div class="container promise-container">
       <div class="promise-content">
         <h2 class="section-title" style="text-align: left;">The first 12 months</h2>
-        <p class="promise-text">The first year matters most. Cosie is designed to last the whole thing. Battery, connectivity, and app all included. Buy it once, set it up, and it just works.</p>
+        <p class="promise-text">Safe sleep guidelines say temperature matters most in the first year. Cosie is designed to last the whole thing. Battery, connectivity, and app. All included. Buy it once, set it up, and it just works.</p>
         <div class="promise-after">
           <h3>After that?</h3>
           <ul class="promise-list">
@@ -175,22 +116,22 @@
   <section class="section section-alt" id="how-it-works">
     <div class="container">
       <h2 class="section-title">Simple as it should be</h2>
-      <p class="section-sub">Scan. Set. Forget.</p>
+      <p class="section-sub">Three steps. Twelve months. Zero fuss.</p>
       <div class="steps">
         <div class="step">
           <div class="step-number">1</div>
-          <h3>Unbox &amp; place</h3>
-          <p>Put Cosie wherever your baby is. Crib, pram, car seat, play mat. It's a teddy. It goes everywhere.</p>
+          <h3>Charge Cosie</h3>
+          <p>Give Cosie a charge. It'll last 12 months.</p>
         </div>
         <div class="step">
           <div class="step-number">2</div>
-          <h3>Scan the QR code</h3>
-          <p>Open the app, scan the code on the box, and set the temperature range you're comfortable with. That's the only setup.</p>
+          <h3>Scan &amp; set up</h3>
+          <p>Download the app, scan the QR code on the box, and set the temperature range you're comfortable with.</p>
         </div>
         <div class="step">
           <div class="step-number">3</div>
-          <h3>That's it</h3>
-          <p>You'll get a gentle nudge on your phone if something needs your attention. Otherwise, just relax.</p>
+          <h3>Place &amp; relax</h3>
+          <p>Pop Cosie in the crib, pram, or car seat. You'll get a nudge on your phone if something needs your attention.</p>
         </div>
       </div>
     </div>
@@ -211,15 +152,15 @@
         </details>
         <details class="faq-item">
           <summary>What does it actually monitor?</summary>
-          <p>The temperature of the air around your baby. Their environment, not their body. It's what health guidelines recommend keeping an eye on. It's not a medical device. It's a comfort product that gives you useful information.</p>
+          <p>The temperature of the air around your baby. Their environment, not their body. Health guidelines recommend keeping it between 16–22°C. It's not a medical device. It's a comfort product that gives you useful information.</p>
         </details>
         <details class="faq-item">
           <summary>Does the battery really last 12 months?</summary>
-          <p>Yes. The electronics inside are designed to sip power, sending tiny updates every few minutes uses almost nothing. One charge covers the full first year.</p>
+          <p>Yes. The electronics inside are designed to sip power, sending tiny updates every few minutes, it uses almost nothing. One charge covers the full first year.</p>
         </details>
         <details class="faq-item">
           <summary>Are there ongoing costs?</summary>
-          <p>No. The first 12 months of everything (connectivity, cloud, app) are included in the price. That covers the full SIDS risk window. After that, you can optionally keep going for a small monthly fee.</p>
+          <p>No. The first 12 months of everything (connectivity, cloud, app) are included in the price. That covers the full SIDS risk window. After that, you can optionally keep going for $49/year or $4.99/month.</p>
         </details>
         <details class="faq-item">
           <summary>Can I wash it?</summary>
@@ -233,7 +174,7 @@
   <section class="section cta-section" id="signup">
     <div class="container cta-container">
       <h2>Be the first to meet Cosie</h2>
-      <p>We're building something small, simple, and genuinely useful. Join the waitlist.</p>
+      <p>Something simple that actually helps. Get early access and a launch-day price.</p>
       <form class="signup-form signup-form-center" id="footer-form">
         <input type="email" placeholder="Your email address" required aria-label="Email address">
         <button type="submit" class="btn">Join the waitlist</button>

@@ -184,6 +184,7 @@ details summary::-webkit-details-marker { display: none; }
 }
 .teddy-illustration { width: 100%; max-width: 320px; }
 .teddy-svg { width: 100%; height: auto; filter: drop-shadow(0 16px 40px rgba(0,0,0,0.1)); }
+.teddy-img { width: 100%; height: auto; filter: drop-shadow(0 20px 50px rgba(0,0,0,0.12)); border-radius: 8px; }
 
 /* Pulse animation */
 .pulse-dot { animation: none; }
