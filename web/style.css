@@ -12,8 +12,8 @@
   --color-border: #E8E0D6;
   --color-white: #FFFFFF;
   --color-surface: #FFFFFF;
-  --font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
   --max-width: 1080px;
   --radius: 16px;
   --radius-sm: 10px;
@@ -270,13 +270,9 @@ details summary::-webkit-details-marker { display: none; }
   box-shadow: var(--shadow-lg);
 }
 .feature-icon {
-  width: 44px;
-  height: 44px;
-  color: var(--color-accent);
-  margin-bottom: 20px;
-  background: var(--color-accent-light);
-  padding: 10px;
-  border-radius: var(--radius-sm);
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 16px;
 }
 .feature-card h3 {
   font-weight: 600;

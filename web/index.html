@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cosie — The teddy that watches over your baby</title>
-  <meta name="description" content="A cellular-connected teddy bear that monitors your baby's sleep environment temperature and alerts you via app — anywhere, no Wi-Fi needed.">
+  <title>Cosie — Your baby's companion</title>
+  <meta name="description" content="Cosie is a teddy bear that keeps an eye on your little one's comfort — wherever they go.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
@@ -17,17 +17,22 @@
   <nav class="nav">
     <div class="container nav-inner">
       <a href="#" class="logo">
-        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
-          <circle cx="12" cy="13" r="2.5" fill="currentColor"/>
-          <circle cx="20" cy="13" r="2.5" fill="currentColor"/>
-          <path d="M11 20c1.5 2.5 8.5 2.5 10 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Bear face logo -->
+          <circle cx="10" cy="10" r="6" fill="currentColor" opacity="0.3"/>
+          <circle cx="26" cy="10" r="6" fill="currentColor" opacity="0.3"/>
+          <circle cx="18" cy="18" r="12" fill="currentColor" opacity="0.15"/>
+          <circle cx="18" cy="18" r="12" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <circle cx="14" cy="16" r="1.5" fill="currentColor"/>
+          <circle cx="22" cy="16" r="1.5" fill="currentColor"/>
+          <ellipse cx="18" cy="20" rx="2" ry="1.5" fill="currentColor" opacity="0.6"/>
+          <path d="M15 22.5c1 1.5 5 1.5 6 0" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
         </svg>
         <span>Cosie</span>
       </a>
       <div class="nav-links">
+        <a href="#about">About</a>
         <a href="#how-it-works">How it works</a>
-        <a href="#features">Features</a>
         <a href="#faq">FAQ</a>
         <a href="#signup" class="btn btn-sm">Get notified</a>
       </div>
@@ -38,11 +43,11 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-content">
-        <h1>A teddy that watches over your baby — even when you can't.</h1>
-        <p class="hero-sub">Cosie monitors your baby's sleep environment temperature and alerts you on your phone. Cellular-connected, so it works anywhere — no Wi-Fi needed.</p>
+        <h1>Your baby's first companion.</h1>
+        <p class="hero-sub">Cosie is a teddy bear that quietly keeps an eye on your little one's comfort — at home, at grandma's, or on the go. Always connected. Always watching out.</p>
         <form class="signup-form" id="hero-form">
           <input type="email" placeholder="Your email address" required aria-label="Email address">
-          <button type="submit" class="btn">Be the first to know</button>
+          <button type="submit" class="btn">Join the waitlist</button>
         </form>
         <p class="hero-note">Launching 2027 · No spam, just updates.</p>
       </div>
@@ -76,50 +81,33 @@
               </filter>
             </defs>
             <g filter="url(#softShadow)">
-              <!-- Left ear -->
               <ellipse cx="92" cy="78" rx="42" ry="44" fill="url(#bodyGrad)"/>
               <ellipse cx="92" cy="76" rx="26" ry="28" fill="url(#earInner)"/>
-              <!-- Right ear -->
               <ellipse cx="208" cy="78" rx="42" ry="44" fill="url(#bodyGrad)"/>
               <ellipse cx="208" cy="76" rx="26" ry="28" fill="url(#earInner)"/>
-              <!-- Body -->
               <ellipse cx="150" cy="255" rx="78" ry="70" fill="url(#bodyGrad)"/>
-              <!-- Belly patch -->
               <ellipse cx="150" cy="250" rx="48" ry="44" fill="url(#bellyGrad)"/>
-              <!-- Left arm -->
               <path d="M82 210 Q55 235 65 270 Q72 285 85 275 Q95 260 88 230Z" fill="url(#bodyGrad)"/>
-              <!-- Right arm -->
               <path d="M218 210 Q245 235 235 270 Q228 285 215 275 Q205 260 212 230Z" fill="url(#bodyGrad)"/>
-              <!-- Left foot -->
               <ellipse cx="112" cy="315" rx="28" ry="16" fill="url(#bodyGrad)"/>
               <ellipse cx="112" cy="314" rx="18" ry="11" fill="url(#bellyGrad)"/>
-              <!-- Right foot -->
               <ellipse cx="188" cy="315" rx="28" ry="16" fill="url(#bodyGrad)"/>
               <ellipse cx="188" cy="314" rx="18" ry="11" fill="url(#bellyGrad)"/>
-              <!-- Head -->
               <circle cx="150" cy="135" r="82" fill="url(#bodyGrad)"/>
-              <!-- Muzzle -->
               <ellipse cx="150" cy="150" rx="36" ry="28" fill="url(#bellyGrad)"/>
-              <!-- Eyes -->
               <ellipse cx="122" cy="122" rx="9" ry="10" fill="#3D2B1A"/>
               <ellipse cx="178" cy="122" rx="9" ry="10" fill="#3D2B1A"/>
               <circle cx="126" cy="118" r="3.5" fill="white" opacity="0.75"/>
               <circle cx="182" cy="118" r="3.5" fill="white" opacity="0.75"/>
-              <!-- Eyebrows (subtle) -->
               <path d="M110 108 Q122 102 134 108" stroke="#B8956A" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
               <path d="M166 108 Q178 102 190 108" stroke="#B8956A" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4"/>
-              <!-- Nose -->
               <ellipse cx="150" cy="143" rx="13" ry="10" fill="#3D2B1A"/>
               <ellipse cx="149" cy="141" rx="6" ry="3.5" fill="#6B5040" opacity="0.45"/>
-              <!-- Mouth -->
               <path d="M138 153 Q144 162 150 155 Q156 162 162 153" stroke="#3D2B1A" stroke-width="2" fill="none" stroke-linecap="round"/>
-              <!-- Cheek blush -->
               <circle cx="108" cy="142" r="10" fill="#E8A88A" opacity="0.25"/>
               <circle cx="192" cy="142" r="10" fill="#E8A88A" opacity="0.25"/>
-              <!-- Stitch line on belly (texture detail) -->
               <path d="M150 222 L150 278" stroke="#C9A876" stroke-width="1.2" stroke-dasharray="5 4" opacity="0.35"/>
             </g>
-            <!-- Status indicator (glowing green dot on belly) -->
             <g filter="url(#glow)">
               <circle cx="150" cy="222" r="5" fill="#6AB06D" class="pulse-dot"/>
               <circle cx="150" cy="222" r="5" fill="#6AB06D" class="pulse-ring"/>
@@ -130,77 +118,57 @@
     </div>
   </section>
 
-  <!-- Features -->
-  <section class="section section-alt" id="features">
+  <!-- About -->
+  <section class="section section-alt" id="about">
     <div class="container">
-      <h2 class="section-title">Built for peace of mind</h2>
-      <p class="section-sub">Not a medical device. Not a clinical monitor. A comfort product with real utility.</p>
+      <h2 class="section-title">More than a teddy bear</h2>
+      <p class="section-sub">Cosie looks after your little one's comfort so you can breathe a little easier — wherever life takes you.</p>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 4C10 4 5 8 4 14c-1 5 1 10 5 13l7 4 7-4c4-3 6-8 5-13C27 8 22 4 16 4z" stroke="currentColor" stroke-width="2" fill="none"/>
-              <path d="M12 14v6M16 12v8M20 16v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Cellular connected</h3>
-          <p>Works on mobile networks — no Wi-Fi, no Bluetooth range limits. At home, at grandma's, at the bach.</p>
+          <div class="feature-icon">🌍</div>
+          <h3>Connected everywhere</h3>
+          <p>At home, at the grandparents', in the car, at the bach. Cosie stays connected wherever your baby goes.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8" y="10" width="16" height="14" rx="2" stroke="currentColor" stroke-width="2" fill="none"/>
-              <path d="M12 10V8a4 4 0 018 0v2" stroke="currentColor" stroke-width="2"/>
-              <circle cx="16" cy="18" r="2" fill="currentColor"/>
-            </svg>
-          </div>
-          <h3>12-month battery</h3>
-          <p>Set it up once. No charging, no cables, no maintenance for the full 12-month SIDS risk window.</p>
+          <div class="feature-icon">🔋</div>
+          <h3>12 months, zero maintenance</h3>
+          <p>One charge lasts 12 months. No cables, no charging, no fuss — just put it in and forget about it.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 4l3 6h7l-5 4 2 7-7-4-7 4 2-7-5-4h7z" fill="none" stroke="currentColor" stroke-width="2"/>
-            </svg>
-          </div>
-          <h3>12 months included</h3>
-          <p>Cellular data, cloud service, and app — all included for 12 months. No subscriptions during the critical period.</p>
+          <div class="feature-icon">📱</div>
+          <h3>Alerts on your phone</h3>
+          <p>If your baby's environment gets too warm or too cool, you'll know about it — wherever you are.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">
-            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 28c6.6 0 12-5.4 12-12S22.6 4 16 4 4 9.4 4 16s5.4 12 12 12z" stroke="currentColor" stroke-width="2" fill="none"/>
-              <path d="M12 16l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <h3>Safe materials</h3>
-          <p>Designed for the nursery environment. No hard edges, no small parts, no wearables on your baby.</p>
+          <div class="feature-icon">🧸</div>
+          <h3>Just a teddy</h3>
+          <p>No wearables, no clips, no socks. Cosie sits alongside your baby — soft, safe, and comforting.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- The 12-Month Promise -->
+  <!-- The Promise -->
   <section class="section" id="promise">
     <div class="container promise-container">
       <div class="promise-content">
-        <h2 class="section-title" style="text-align: left;">The 12-month promise</h2>
-        <p class="promise-text">The SIDS risk window is 12 months. Cosie's battery, cellular plan, and app are all designed around that same window. Buy it, set it up, and it works — no maintenance, no subscriptions, no fuss.</p>
+        <h2 class="section-title" style="text-align: left;">The first 12 months</h2>
+        <p class="promise-text">The first year matters most. Cosie is designed to last the whole thing — battery, connectivity, and app all included. Buy it once, set it up, and it just works.</p>
         <div class="promise-after">
-          <h3>After 12 months?</h3>
+          <h3>After that?</h3>
           <ul class="promise-list">
             <li>
               <span class="promise-emoji">🔄</span>
               <div>
                 <strong>Keep going</strong>
-                <p>Recharge the battery, renew cellular, keep monitoring.</p>
+                <p>Top up and keep monitoring for as long as you like.</p>
               </div>
             </li>
             <li>
               <span class="promise-emoji">🎁</span>
               <div>
-                <strong>Gift it forward</strong>
-                <p>Pass it to a friend with a newborn. Built-in word of mouth.</p>
+                <strong>Pass it on</strong>
+                <p>Gift it to a friend with a newborn. Cosie starts fresh for them.</p>
               </div>
             </li>
             <li>
@@ -219,43 +187,23 @@
   <!-- How it works -->
   <section class="section section-alt" id="how-it-works">
     <div class="container">
-      <h2 class="section-title">How it works</h2>
-      <p class="section-sub">Three steps. Zero maintenance. Total peace of mind.</p>
+      <h2 class="section-title">Simple as it should be</h2>
+      <p class="section-sub">No setup guides. No pairing. No network config.</p>
       <div class="steps">
         <div class="step">
           <div class="step-number">1</div>
-          <div class="step-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 8c-5 0-9 4-9 9v2c-2 0-3 1-3 3v14c0 2 1 3 3 3h18c2 0 3-1 3-3V22c0-2-1-3-3-3v-2c0-5-4-9-9-9z" fill="none" stroke="currentColor" stroke-width="2"/>
-              <circle cx="24" cy="20" r="6" fill="currentColor" opacity="0.2"/>
-              <path d="M20 30h8M24 26v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Place the teddy</h3>
-          <p>Pop Cosie in the crib, bassinet, or stroller — wherever your baby sleeps.</p>
+          <h3>Unbox &amp; place</h3>
+          <p>Put Cosie wherever your baby is — crib, pram, car seat, play mat. It's a teddy. It goes everywhere.</p>
         </div>
         <div class="step">
           <div class="step-number">2</div>
-          <div class="step-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="14" y="6" width="20" height="36" rx="4" stroke="currentColor" stroke-width="2" fill="none"/>
-              <circle cx="24" cy="36" r="2" fill="currentColor"/>
-              <path d="M20 14h8M18 20h12M18 24h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-            </svg>
-          </div>
-          <h3>Download the app</h3>
-          <p>Set your preferred temperature range. Cosie connects instantly over cellular — no Wi-Fi setup needed.</p>
+          <h3>Open the app</h3>
+          <p>Set the temperature range you're comfortable with. Cosie connects automatically — nothing to configure.</p>
         </div>
         <div class="step">
           <div class="step-number">3</div>
-          <div class="step-icon">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 6l4 8h8l-6 5 2 8-8-4-8 4 2-8-6-5h8z" fill="currentColor" opacity="0.15" stroke="currentColor" stroke-width="2"/>
-              <path d="M12 34c0 0 4 8 12 8s12-8 12-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Relax</h3>
-          <p>Get alerts on your phone if the temperature drifts outside the safe range. Wherever you are.</p>
+          <h3>That's it</h3>
+          <p>You'll get a gentle nudge on your phone if something needs your attention. Otherwise, just relax.</p>
         </div>
       </div>
     </div>
@@ -264,35 +212,31 @@
   <!-- FAQ -->
   <section class="section" id="faq">
     <div class="container">
-      <h2 class="section-title">Questions & answers</h2>
+      <h2 class="section-title">Questions</h2>
       <div class="faq-list">
         <details class="faq-item">
-          <summary>Is it safe for the crib?</summary>
-          <p>Cosie is designed with nursery safety in mind. No hard edges, no small detachable parts, and made from baby-safe, non-toxic materials. It sits alongside your baby, not on them — no wearables, no clips, no socks.</p>
+          <summary>Is it safe?</summary>
+          <p>Cosie is designed for babies. Soft materials, no hard edges, no small parts, no wearables. It sits beside your little one — not on them.</p>
         </details>
         <details class="faq-item">
-          <summary>How does it connect without Wi-Fi?</summary>
-          <p>Cosie uses low-power cellular connectivity (similar to how a GPS tracker works). It sends tiny packets of temperature data over the mobile network. This means it works everywhere with cell coverage — at home, at the grandparents', at the bach, even in the car.</p>
+          <summary>How does it connect?</summary>
+          <p>Cosie has its own built-in connection — like a GPS tracker. No setup, no passwords, no range limits. If there's mobile coverage, Cosie is connected.</p>
         </details>
         <details class="faq-item">
-          <summary>Does it measure my baby's body temperature?</summary>
-          <p>No — and intentionally so. Cosie monitors the ambient temperature of your baby's sleep environment (the air around them in the crib). This is what sleep safety guidelines from Plunket and the AAP focus on. It's not a medical device.</p>
+          <summary>What does it actually monitor?</summary>
+          <p>The temperature of the air around your baby — their environment, not their body. It's what health guidelines recommend keeping an eye on. Cosie isn't a medical device — it's a comfort product that gives you useful information.</p>
         </details>
         <details class="faq-item">
-          <summary>How long does the battery really last?</summary>
-          <p>12 months of continuous monitoring on a single charge. The electronics module uses an ultra-low-power cellular chip designed for IoT devices that send small amounts of data infrequently — perfect for temperature readings every few minutes.</p>
+          <summary>Does the battery really last 12 months?</summary>
+          <p>Yes. The electronics inside are designed to sip power — sending tiny updates every few minutes uses almost nothing. One charge covers the full first year.</p>
         </details>
         <details class="faq-item">
-          <summary>What temperature range does it alert on?</summary>
-          <p>You set your preferred range in the app. Sleep safety guidelines recommend 16–20°C (61–68°F) for babies. If the temperature around your baby drifts above or below your set range, you'll get a push notification on your phone.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Is there a monthly subscription?</summary>
-          <p>No. 12 months of cellular connectivity, cloud service, and full app access are included in the purchase price. After 12 months, you can optionally renew for $4.99/month if you want to keep monitoring.</p>
+          <summary>Are there ongoing costs?</summary>
+          <p>No. The first 12 months of everything — connectivity, cloud, app — are included in the price. After that, you can optionally keep going for a small monthly fee.</p>
         </details>
         <details class="faq-item">
           <summary>Can I wash it?</summary>
-          <p>The electronics module is removable. Take it out, and the teddy is fully machine washable. Pop the module back in when it's dry.</p>
+          <p>The electronics pop out. The teddy goes in the washing machine. Pop the module back in when it's dry.</p>
         </details>
       </div>
     </div>
@@ -302,7 +246,7 @@
   <section class="section cta-section" id="signup">
     <div class="container cta-container">
       <h2>Be the first to meet Cosie</h2>
-      <p>Join the waitlist for early access and a special launch price.</p>
+      <p>We're building something small, simple, and genuinely useful. Join the waitlist.</p>
       <form class="signup-form signup-form-center" id="footer-form">
         <input type="email" placeholder="Your email address" required aria-label="Email address">
         <button type="submit" class="btn">Join the waitlist</button>
@@ -316,22 +260,26 @@
     <div class="container footer-inner">
       <div class="footer-brand">
         <span class="logo">
-          <svg class="logo-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
-            <circle cx="12" cy="13" r="2.5" fill="currentColor"/>
-            <circle cx="20" cy="13" r="2.5" fill="currentColor"/>
-            <path d="M11 20c1.5 2.5 8.5 2.5 10 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="10" cy="10" r="6" fill="currentColor" opacity="0.3"/>
+            <circle cx="26" cy="10" r="6" fill="currentColor" opacity="0.3"/>
+            <circle cx="18" cy="18" r="12" fill="currentColor" opacity="0.15"/>
+            <circle cx="18" cy="18" r="12" stroke="currentColor" stroke-width="1.5" fill="none"/>
+            <circle cx="14" cy="16" r="1.5" fill="currentColor"/>
+            <circle cx="22" cy="16" r="1.5" fill="currentColor"/>
+            <ellipse cx="18" cy="20" rx="2" ry="1.5" fill="currentColor" opacity="0.6"/>
+            <path d="M15 22.5c1 1.5 5 1.5 6 0" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
           </svg>
           <span>Cosie</span>
         </span>
-        <p class="footer-tagline">The teddy that watches over your baby.</p>
+        <p class="footer-tagline">Your baby's companion.</p>
       </div>
       <div class="footer-links">
+        <a href="#about">About</a>
         <a href="#how-it-works">How it works</a>
-        <a href="#features">Features</a>
         <a href="#faq">FAQ</a>
       </div>
-      <p class="footer-copy">&copy; 2026 Cosie. Designed in New Zealand.</p>
+      <p class="footer-copy">&copy; 2026 Cosie. Made in New Zealand.</p>
     </div>
   </footer>
 
