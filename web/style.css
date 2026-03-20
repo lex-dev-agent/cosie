@@ -13,7 +13,7 @@
   --color-white: #FFFFFF;
   --color-surface: #FFFFFF;
   --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-serif: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
   --max-width: 1080px;
   --radius: 16px;
   --radius-sm: 10px;
