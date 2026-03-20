@@ -110,7 +110,7 @@ details summary::-webkit-details-marker { display: none; }
   font-size: 1.3rem;
   color: var(--color-text);
 }
-.logo-icon { width: 28px; height: 28px; color: var(--color-accent); }
+.logo-emoji { font-size: 1.5rem; line-height: 1; }
 .nav-links {
   display: flex;
   align-items: center;
